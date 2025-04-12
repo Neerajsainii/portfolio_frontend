@@ -391,7 +391,7 @@
 				</div>
 			<div class="row">
 				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-					<a href="https://bank-management-system-epu1.onrender.com/" target="_blank"
+					<a href="https://handwritten-data-extractor.onrender.com/" target="_blank"
 					class="services-1 shadow">
 					<span class="icon">
 						
@@ -464,7 +464,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Website</h3>
-							<p><a>neerajsaini.me</a></p>
+							<p><a href="https://www.instagram.com/nycto._philia._/" target="_blank">neerajsaini.me</a></p>
 						</div>
 					</div>
 				</div>
@@ -472,7 +472,10 @@
 			
 			<div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
-					<form method="POST" action="/des" class="bg-light p-4 p-md-5 contact-form" onsubmit="return showModal()">
+					<form method="POST" class="bg-light p-4 p-md-5 contact-form" data-netlify="true" name="portfolio-contact" onsubmit="return showModal()" netlify-honeypot="bot-field">
+						<p class="d-none">
+							<label>Don't fill this out if you're human: <input name="bot-field" /></label>
+						</p>
 						<div class="form-group">
 							<input type="text" class="form-control" name="name" placeholder="Your Name" required>
 						</div>
@@ -614,7 +617,9 @@
 		function showModal() {
 		// Show Bootstrap modal
 		$('#sentModal').modal('show');
-		return false; // prevent form submission for demo purposes
+		
+		// Don't prevent the form submission
+		return true;
 	}
 	</script>
 
